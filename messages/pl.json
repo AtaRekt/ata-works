@@ -1,0 +1,12 @@
+{
+  "common": {
+    "welcome": "Witamy",
+    "language": "Język",
+    "hello": "Witaj, Świecie!"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "contact": "Kontakt"
+  }
+} 

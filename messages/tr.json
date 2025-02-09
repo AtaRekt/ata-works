@@ -1,0 +1,12 @@
+{
+  "common": {
+    "welcome": "Hoşgeldiniz",
+    "language": "Dil",
+    "hello": "Merhaba, Dünya!"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  }
+} 

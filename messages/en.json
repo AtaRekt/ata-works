@@ -1,0 +1,15 @@
+{
+    "HomePage": {
+        "title": "Hello world!"
+    },
+    "common": {
+        "welcome": "Welcome",
+        "language": "Language",
+        "hello": "Hello, World!"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    }
+}
