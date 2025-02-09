@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="space-y-1 flex-1">
                   <h1 className="text-2xl font-medium">Mustafa Ata ÇAĞLAYAN</h1>
                   <p className="text-muted-foreground">
-                    Full Stack Developer & AI Enthusiast
+                    {t('common.fullStackDev')}
                   </p>
                 </div>
 
@@ -41,11 +41,10 @@ export default function Home() {
 
               <div className="space-y-4">
                 <h2 className="text-sm uppercase tracking-wider text-muted-foreground">
-                  About
+                  {t('common.about')}
                 </h2>
                 <p className="text-sm text-muted-foreground">
-                  18-year-old self-taught developer from Istanbul, specializing in SaaS and MVP development.
-                  Passionate about modern web technologies and AI integration.
+                  {t('common.aboutText')}
                 </p>
               </div>
             </div>
@@ -53,19 +52,19 @@ export default function Home() {
             {/* Skills Section */}
             <div className="space-y-6">
               <h2 className="text-sm uppercase tracking-wider text-muted-foreground">
-                Technologies
+                {t('common.technologies')}
               </h2>
               {[
                 {
-                  title: "Frontend",
+                  title: t('skills.frontend'),
                   skills: ["Next.js", "React", "Tailwind", "TypeScript", "HTML", "CSS"],
                 },
                 {
-                  title: "Backend",
+                  title: t('skills.backend'),
                   skills: ["Node.js", "PostgreSQL", "MySQL", "MongoDB", "Redis", "PHP"],
                 },
                 {
-                  title: "Tools",
+                  title: t('skills.tools'),
                   skills: ["Docker", "Git", "CI/CD", "AWS", "LLMs"],
                 },
               ].map((category) => (

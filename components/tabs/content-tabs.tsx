@@ -5,9 +5,11 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 export function ContentTabs() {
   const [activeTab, setActiveTab] = useState<'experience' | 'projects'>('experience');
+  const t = useTranslations();
 
   return (
     <div className="space-y-8">
@@ -22,7 +24,7 @@ export function ContentTabs() {
               : 'text-muted-foreground hover:text-foreground'
           }`}
         >
-          Experience
+          {t('tabs.experience')}
         </Button>
         <Button
           onClick={() => setActiveTab('projects')}
@@ -33,7 +35,7 @@ export function ContentTabs() {
               : 'text-muted-foreground hover:text-foreground'
           }`}
         >
-          Projects
+          {t('tabs.projects')}
         </Button>
       </div>
 

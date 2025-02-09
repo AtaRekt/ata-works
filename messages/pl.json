@@ -2,11 +2,24 @@
   "common": {
     "welcome": "Witamy",
     "language": "Język",
-    "hello": "Witaj, Świecie!"
+    "hello": "Witaj, Świecie!",
+    "about": "O mnie",
+    "technologies": "Technologie",
+    "fullStackDev": "Full Stack Developer & Entuzjasta AI",
+    "aboutText": "18-letni samouk developer z Stambułu, specjalizujący się w rozwoju SaaS i MVP. Pasjonat nowoczesnych technologii webowych i integracji AI."
   },
   "nav": {
     "home": "Strona główna",
     "about": "O nas",
     "contact": "Kontakt"
+  },
+  "tabs": {
+    "experience": "Doświadczenie",
+    "projects": "Projekty"
+  },
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Narzędzia"
   }
 } 

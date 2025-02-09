@@ -2,11 +2,24 @@
   "common": {
     "welcome": "Hoşgeldiniz",
     "language": "Dil",
-    "hello": "Merhaba, Dünya!"
+    "hello": "Merhaba, Dünya!",
+    "about": "Hakkımda",
+    "technologies": "Teknolojiler",
+    "fullStackDev": "Full Stack Geliştirici & Yapay Zeka Meraklısı",
+    "aboutText": "İstanbul'dan 18 yaşında, kendi kendini yetiştirmiş, SaaS ve MVP geliştirme konusunda uzmanlaşmış yazılımcı. Modern web teknolojileri ve yapay zeka entegrasyonu konularına tutkulu."
   },
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "contact": "İletişim"
+  },
+  "tabs": {
+    "experience": "Deneyim",
+    "projects": "Projeler"
+  },
+  "skills": {
+    "frontend": "Önyüz",
+    "backend": "Arkayüz",
+    "tools": "Araçlar"
   }
 } 

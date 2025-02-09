@@ -1,35 +1,55 @@
 'use client'
 
 import { useLocale, useTranslations } from 'next-intl'
-import { useRouter, usePathname } from 'next/navigation'
+import Image from 'next/image'
 import { locales } from '@/i18n/config'
 import { setUserLocale } from '@/i18n/actions'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
+const flagMap = {
+  en: '/en.png',
+  pl: '/pl.png',
+  tr: '/tr.png',
+} as const
+
 export default function LanguageSwitcher() {
   const t = useTranslations('common')
   const locale = useLocale()
-  const router = useRouter()
-  const pathname = usePathname()
 
-  const handleChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value
+  const handleChange = async (newLocale: string) => {
     await setUserLocale(newLocale)
   }
 
   return (
-    <div className="flex items-center gap-2">
-      <label htmlFor="language-select">{t('language')}:</label>
-      <select
-        id="language-select"
-        value={locale}
-        onChange={handleChange}
-        className="border rounded p-1"
-      >
+    <Select value={locale} onValueChange={handleChange}>
+      <SelectTrigger className="w-[120px]">
+        <div className="flex items-center gap-2">
+          <SelectValue placeholder="Select language" />
+        </div>
+      </SelectTrigger>
+      <SelectContent>
         {locales.map((loc) => (
-          <option key={loc} value={loc}>
-            {loc.toUpperCase()}
-          </option>
+          <SelectItem key={loc} value={loc}>
+            <div className="flex items-center gap-2">
+              <div className="relative w-5 h-5">
+                <Image
+                  src={flagMap[loc as keyof typeof flagMap]}
+                  alt={loc}
+                  fill
+                  className="object-cover rounded"
+                />
+              </div>
+              <span>{loc.toUpperCase()}</span>
+            </div>
+          </SelectItem>
         ))}
-      </select>
-    </div>
+      </SelectContent>
+    </Select>
   )
 } 

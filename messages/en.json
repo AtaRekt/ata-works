@@ -5,11 +5,24 @@
     "common": {
         "welcome": "Welcome",
         "language": "Language",
-        "hello": "Hello, World!"
+        "hello": "Hello, World!",
+        "about": "About",
+        "technologies": "Technologies",
+        "fullStackDev": "Full Stack Developer & AI Enthusiast",
+        "aboutText": "18-year-old self-taught developer from Istanbul, specializing in SaaS and MVP development. Passionate about modern web technologies and AI integration."
     },
     "nav": {
         "home": "Home",
         "about": "About",
         "contact": "Contact"
+    },
+    "tabs": {
+        "experience": "Experience",
+        "projects": "Projects"
+    },
+    "skills": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Tools"
     }
 }
