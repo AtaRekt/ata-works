@@ -1,9 +1,9 @@
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { ContentTabs } from "@/components/tabs/content-tabs";
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/language-switcher";
+import SocialLinks from "@/components/social-links";
 
 export default function Home() {
   const t = useTranslations();
@@ -11,7 +11,25 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background py-20">
       <main className="container mx-auto px-4 max-w-5xl space-y-16">
-        <LanguageSwitcher />
+        <div className="flex flex-wrap justify-between items-center gap-6">
+          <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-muted flex-shrink-0">
+            <Image
+              src="/profile.jpg"
+              alt="Mustafa Ata ÇAĞLAYAN"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="flex-1">
+            <h1 className="text-2xl font-semibold">Mustafa Ata ÇAĞLAYAN</h1>
+            <p className="text-muted-foreground text-sm mb-2.5">
+              {t('common.fullStackDev')}
+            </p>
+            <SocialLinks />
+          </div>
+          <LanguageSwitcher />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Column - Tabs */}
           <ContentTabs />
@@ -20,24 +38,7 @@ export default function Home() {
           <div className="space-y-12">
             {/* Name and About Section */}
             <div className="space-y-6">
-              <div className="flex items-center gap-6">
-                <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-muted flex-shrink-0">
-                  <Image
-                    src="/profile.jpg"
-                    alt="Mustafa Ata ÇAĞLAYAN"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-                <div className="space-y-1 flex-1">
-                  <h1 className="text-2xl font-medium">Mustafa Ata ÇAĞLAYAN</h1>
-                  <p className="text-muted-foreground">
-                    {t('common.fullStackDev')}
-                  </p>
-                </div>
 
-              </div>
 
               <div className="space-y-4">
                 <h2 className="text-sm uppercase tracking-wider text-muted-foreground">
@@ -61,7 +62,7 @@ export default function Home() {
                 },
                 {
                   title: t('skills.backend'),
-                  skills: ["Node.js", "PostgreSQL", "MySQL", "MongoDB", "Redis", "PHP"],
+                  skills: ["Node.js", "TypeScript", "JavaScript", "PostgreSQL", "SQLite", "MySQL", "MongoDB", "Redis", "PHP"],
                 },
                 {
                   title: t('skills.tools'),
@@ -85,42 +86,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Social Links */}
-        <div className="flex justify-center gap-6">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Github className="h-5 w-5" />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Linkedin className="h-5 w-5" />
-          </a>
-          <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Twitter className="h-5 w-5" />
-          </a>
-          <a
-            href="https://instagram.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Instagram className="h-5 w-5" />
-          </a>
         </div>
       </main>
     </div>

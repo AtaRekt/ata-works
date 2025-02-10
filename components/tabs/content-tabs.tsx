@@ -45,20 +45,20 @@ export function ContentTabs() {
           {/* Experience Items */}
           {[
             {
-              period: "2023 - Present",
-              role: "Freelance Full Stack Developer",
-              company: "Self-employed",
-              location: "Istanbul, Turkey",
-              description: "Building SaaS applications and MVPs for clients using modern web technologies.",
-              technologies: ["Next.js", "React", "Node.js", "PostgreSQL"]
+              period: "2024 Oct - 2025 Mar",
+              role: "Full Stack Developer",
+              company: "Dcloud.com.tr",
+              location: "Fulltime - Istanbul, Turkey",
+              description: "Building insurance app, business websites and hr task management systems.",
+              technologies: ["Next.js", "React", "PostgreSQL", "Tailwind"]
             },
             {
-              period: "2022 - 2023",
-              role: "Junior Developer",
-              company: "Tech Company",
-              location: "Remote",
-              description: "Developed and maintained web applications, focusing on frontend development.",
-              technologies: ["React", "TypeScript", "Tailwind"]
+              period: "2024 Jun - 2024 Oct",
+              role: "Full Stack Developer",
+              company: "Bandsoffads.ai",
+              location: "Remote - California, USA",
+              description: "Developed and maintained AI SaaS platform, focusing on AI video generation for UGC ads.",
+              technologies: ["Next.js", "React", "Node.js", "PostgreSQL", "Tailwind", "OpenAI"]
             },
           ].map((experience, index) => (
             <div
@@ -97,24 +97,24 @@ export function ContentTabs() {
           {/* Project Cards */}
           {[
             {
-              title: "Project 1",
-              description: "A SaaS platform built with Next.js and PostgreSQL",
-              tags: ["Next.js", "PostgreSQL", "Tailwind"],
-              link: "https://project1.com",
+              title: "SnapUGC",
+              description: "AI video generation SaaS platform built with Next.js and PostgreSQL.",
+              tags: ["Next.js", "PostgreSQL", "Tailwind", "OpenAI"],
+              link: "https://snapugc.com",
               image: "/project1-thumbnail.jpg"
             },
             {
-              title: "Project 2",
-              description: "AI-powered MVP application",
-              tags: ["React", "Node.js", "Docker"],
-              link: "https://project2.com",
+              title: "nextjs-lucia-postgres-shadcn-template",
+              description: "A Next.js, Lucia, PostgreSQL, Shadcn UI template for authentication and authorization.",
+              tags: ["Next.js", "PostgreSQL", "Shadcn UI", "Lucia"],
+              link: "https://github.com/AtaRekt/nextjs-lucia-postgres-shadcn-template",
               image: "/project2-thumbnail.jpg"
             },
             {
-              title: "Project 3",
-              description: "Full-stack web application",
-              tags: ["TypeScript", "MongoDB", "AWS"],
-              link: "https://project3.com",
+              title: "OCR App",
+              description: "A Android & IOS mobile application for OCR using LLMs.",
+              tags: ["React Native", "Expo", "Nativewind", "OpenAI", "Typescript"],
+              link: "https://github.com/AtaRekt/ocr-app",
               image: "/project3-thumbnail.jpg"
             },
           ].map((project) => (
@@ -125,14 +125,14 @@ export function ContentTabs() {
               rel="noopener noreferrer"
               className="flex gap-4 p-4 rounded-lg border border-muted hover:border-muted-foreground/20 transition-colors group"
             >
-              <div className="relative w-24 h-16 rounded-md overflow-hidden flex-shrink-0">
+              {/* <div className="relative w-24 h-16 rounded-md overflow-hidden flex-shrink-0">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <div className="flex-1 min-w-0">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-medium group-hover:text-foreground/80 truncate">

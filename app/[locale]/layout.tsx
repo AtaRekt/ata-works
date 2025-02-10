@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "..//globals.css";
 import { cn } from "@/lib/utils";
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
-const geist = Geist({
+const inter = Inter({
   subsets: ["latin"],
 });
 
@@ -26,8 +26,8 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn(
-        "min-h-screen bg-background font-sans antialiased",
-        geist.className
+        "min-h-screen bg-background antialiased",
+        inter.className
       )}>
         <NextIntlClientProvider messages={messages}>
           {children}
