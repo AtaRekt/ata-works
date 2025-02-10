@@ -6,7 +6,7 @@
     "about": "Hakkımda",
     "technologies": "Teknolojiler",
     "fullStackDev": "Full Stack Geliştirici & Yapay Zeka Meraklısı",
-    "aboutText": "İstanbul'dan 18 yaşında, kendi kendini yetiştirmiş, SaaS ve MVP geliştirme konusunda uzmanlaşmış yazılımcı. Modern web teknolojileri ve yapay zeka entegrasyonu konularına tutkulu."
+    "aboutText": "18 yaşında yazılım ve ürün geliştirme alanlarında uzmanlaşmış bir yazılımcıyım. SaaS projeleri ve MVP(demo) geliştirmeye odaklanıyorum. Modern web teknolojileri kullanarak profesyonel çözümler üretiyorum."
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -20,6 +20,55 @@
   "skills": {
     "frontend": "Önyüz",
     "backend": "Arkayüz",
-    "tools": "Araçlar"
+    "tools": "Araçlar",
+    "mobile": "Mobil"
+  },
+  "months": {
+    "jan": "Oca",
+    "feb": "Şub",
+    "mar": "Mar",
+    "apr": "Nis",
+    "may": "May",
+    "jun": "Haz",
+    "jul": "Tem",
+    "aug": "Ağu",
+    "sep": "Eyl",
+    "oct": "Eki",
+    "nov": "Kas",
+    "dec": "Ara"
+  },
+  "jobTypes": {
+    "fulltime": "Tam Zamanlı",
+    "remote": "Uzaktan"
+  },
+  "countries": {
+    "turkey": "Türkiye",
+    "usa": "ABD"
+  },
+  "cities": {
+    "istanbul": "İstanbul",
+    "california": "Kaliforniya"
+  },
+  "experiences": {
+    "dcloud": {
+      "description": "Sigorta uygulaması, kurumsal web siteleri ve insan kaynakları görev yönetim sistemleri oluşturma."
+    },
+    "bandsoffads": {
+      "description": "UGC reklamları için yapay zeka video oluşturma odaklı AI SaaS platformunun geliştirilmesi ve bakımı."
+    }
+  },
+  "projects": {
+    "snapugc": {
+      "title": "SnapUGC",
+      "description": "Next.js ve PostgreSQL ile oluşturulmuş AI video üretim SaaS platformu."
+    },
+    "authTemplate": {
+      "title": "nextjs-lucia-postgres-shadcn-template",
+      "description": "Giriş, kayıt ve yetkilendirme sistemi içeren Next.js, Lucia, PostgreSQL, Shadcn UI kullanan yönetim paneli şablonu."
+    },
+    "ocrApp": {
+      "title": "OCR Uygulaması",
+      "description": "LLM'leri kullanan Android ve IOS için OCR(Yazı tarama) mobil uygulaması."
+    }
   }
 } 

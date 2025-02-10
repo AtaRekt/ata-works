@@ -23,6 +23,55 @@
     "skills": {
         "frontend": "Frontend",
         "backend": "Backend",
-        "tools": "Tools"
+        "tools": "Tools",
+        "mobile": "Mobile"
+    },
+    "months": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "May",
+        "jun": "Jun",
+        "jul": "Jul",
+        "aug": "Aug",
+        "sep": "Sep",
+        "oct": "Oct",
+        "nov": "Nov",
+        "dec": "Dec"
+    },
+    "jobTypes": {
+        "fulltime": "Full-time",
+        "remote": "Remote"
+    },
+    "countries": {
+        "turkey": "Turkey",
+        "usa": "USA"
+    },
+    "cities": {
+        "istanbul": "Istanbul",
+        "california": "California"
+    },
+    "experiences": {
+        "dcloud": {
+            "description": "Creating insurance application, business websites and human resources task management systems."
+        },
+        "bandsoffads": {
+            "description": "Developed and maintained AI SaaS platform focused on AI video creation for UGC ads."
+        }
+    },
+    "projects": {
+        "snapugc": {
+            "title": "SnapUGC",
+            "description": "AI video generation SaaS platform built with Next.js and PostgreSQL."
+        },
+        "authTemplate": {
+            "title": "nextjs-lucia-postgres-shadcn-template",
+            "description": "A Next.js, Lucia, PostgreSQL, Shadcn UI template for authentication and authorization."
+        },
+        "ocrApp": {
+            "title": "OCR App",
+            "description": "A Android & IOS mobile application for OCR using LLMs."
+        }
     }
 }

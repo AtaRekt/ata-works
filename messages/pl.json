@@ -6,7 +6,7 @@
     "about": "O mnie",
     "technologies": "Technologie",
     "fullStackDev": "Full Stack Developer & Entuzjasta AI",
-    "aboutText": "18-letni samouk developer z Stambułu, specjalizujący się w rozwoju SaaS i MVP. Pasjonat nowoczesnych technologii webowych i integracji AI."
+    "aboutText": "18-letni doświadczony developer z Stambułu, specjalizujący się w rozwoju oprogramowania SaaS i tworzeniu MVP. Posiadam szeroką wiedzę w zakresie nowoczesnych technologii webowych i integracji sztucznej inteligencji. Skupiam się na dostarczaniu wysokiej jakości rozwiązań programistycznych, wykorzystując najnowsze narzędzia i frameworki w branży IT."
   },
   "nav": {
     "home": "Strona główna",
@@ -20,6 +20,55 @@
   "skills": {
     "frontend": "Frontend",
     "backend": "Backend",
-    "tools": "Narzędzia"
+    "tools": "Narzędzia",
+    "mobile": "Mobile"
+  },
+  "months": {
+    "jan": "Sty",
+    "feb": "Lut",
+    "mar": "Mar",
+    "apr": "Kwi",
+    "may": "Maj",
+    "jun": "Cze",
+    "jul": "Lip",
+    "aug": "Sie",
+    "sep": "Wrz",
+    "oct": "Paź",
+    "nov": "Lis",
+    "dec": "Gru"
+  },
+  "jobTypes": {
+    "fulltime": "Pełny etat",
+    "remote": "Zdalnie"
+  },
+  "countries": {
+    "turkey": "Turcja",
+    "usa": "USA"
+  },
+  "cities": {
+    "istanbul": "Stambuł",
+    "california": "Kalifornia"
+  },
+  "experiences": {
+    "dcloud": {
+      "description": "Tworzenie aplikacji ubezpieczeniowych, stron internetowych dla firm i systemów zarządzania zadaniami HR."
+    },
+    "bandsoffads": {
+      "description": "Rozwój i utrzymanie platformy AI SaaS skupionej na tworzeniu wideo AI dla reklam UGC."
+    }
+  },
+  "projects": {
+    "snapugc": {
+      "title": "SnapUGC",
+      "description": "Platforma SaaS do generowania wideo AI zbudowana przy użyciu Next.js i PostgreSQL."
+    },
+    "authTemplate": {
+      "title": "nextjs-lucia-postgres-shadcn-template",
+      "description": "Szablon Next.js, Lucia, PostgreSQL, Shadcn UI do uwierzytelniania i autoryzacji."
+    },
+    "ocrApp": {
+      "title": "Aplikacja OCR",
+      "description": "Aplikacja mobilna Android i IOS do OCR wykorzystująca LLM."
+    }
   }
 } 

@@ -62,11 +62,15 @@ export default function Home() {
                 },
                 {
                   title: t('skills.backend'),
-                  skills: ["Node.js", "TypeScript", "JavaScript", "PostgreSQL", "SQLite", "MySQL", "MongoDB", "Redis", "PHP"],
+                  skills: ["Node.js", "Express.js", "TypeScript", "JavaScript", "PHP", "PostgreSQL", "SQLite", "MySQL", "MongoDB", "Redis", "RabbitMQ"],
+                },
+                {
+                  title: t('skills.mobile'),
+                  skills: ["React Native", "Expo", "TypeScript", "Nativewind"],
                 },
                 {
                   title: t('skills.tools'),
-                  skills: ["Docker", "Git", "CI/CD", "AWS", "LLMs"],
+                  skills: ["Docker", "Git", "CI/CD", "AWS", "LLMs", "DigitalOcean", "Vercel", "Cloudflare", "S3", "OpenAI API"],
                 },
               ].map((category) => (
                 <div key={category.title} className="space-y-2">
