@@ -4,7 +4,7 @@ export default function SocialLinks() {
   return (
     <div className="flex justify-start gap-6">
           <a
-            href="https://github.com/AtaRekt"
+            href="https://github.com/ilovehugetits"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -20,7 +20,7 @@ export default function SocialLinks() {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="https://x.com/mustafaata36187"
+            href="https://x.com/ilovefreakytits"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
